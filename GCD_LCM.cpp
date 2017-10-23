@@ -2,10 +2,10 @@
 using namespace std;
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
+/* program to find the greatest common divisor and the least common multiple */
 int main() {
-	int i,a,b,ebob,ekok;
-	cout << "iki sayý giriniz: "<< endl;
+	int i,a,b,gcd,lcm;
+	cout << "enter two numbers: "<< endl;
 	cin >> a;
 	cout << endl;
 	cin >> b;
@@ -18,17 +18,17 @@ int main() {
 	{
 		if (a%i==0 && b%i==0)
 		{
-		ebob=i;
+		gcd=i;
 		}
 	i++;
 	}
-	cout << "ebob degeri: "<< ebob << endl;
+	cout << "gcd is: "<< gcd << endl;
 	
 	if (a>b)
-		ekok = (a / ebob) * b;
+		lcm = (a / gcd) * b;
 	else 
-		ekok = (b / ebob) * a;
-	cout << "ekok degeri: " << ekok << endl;	
+		lcm = (b / gcd) * a;
+	cout << "lcm is : " << lcm << endl;	
 	
 	
 	
